@@ -28,5 +28,13 @@ SocialSim CP4 microsimulation approach:
     Uses the gt/sim methodology and incorporates Moody-like
     inputs
 
-
-
+Original Tweets paper:
+    RESEARCH QUESTON:  Can we generate a representational model that
+    captures original tweets that reflect attitudes?
+    Use Fanchao's lstm model for generation of original tweets.
+    
+Biological Evolution of Symbols:
+    Research Question:  How far does the analogy between meme/symbol
+    evolution and biological evolution go?  Can it tell us about the
+    relation between internal mental states, collective mental states
+    and the spread of information?
