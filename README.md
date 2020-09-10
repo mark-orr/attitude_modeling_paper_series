@@ -1,0 +1,1 @@
+README.md for /Users/biocomplexity/Projects/SocioCognitiveModeling/AttitudeModelingSeries
