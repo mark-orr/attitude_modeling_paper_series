@@ -1,0 +1,22 @@
+Observational social psychological modeling to scale
+introduction
+--understanding the behavior of social systems can sometimes warrant a multiscale perspective  
+----this perspective is not new, but methods for implementation of models/analytics, etc are nascent
+----we assert that such methods should respect as much as necessary the theoretical committments across scales
+----we also assert that the number of problems, e.g., computational resources and theoretical interfaces (scale-interfaces) and calibration, increase as a function, roughly, of the number of degrees of scale
+----Solutions for such implementation and theoretical problems are not ready-made
+
+--scientific analysis, tests of theory, validation are equally fraugh with problems from the multiscale perspective
+----
+
+--in this paper we provide demonstration of using observational data to simulate a social system.  The demonstration considers theory from across scales and provides future predictions.  In particular, the demonstration sits at the intersection of two specific theoretical committments, one coming from sociology and the other from psychology.   In short, we show a method for leveraging cross-scale theories for the purpose of both dimensionality reduction and computational efficiency.
+
+methods
+--the testbed for the model was an agent based modeling system that was strongly generative from the agent level of scale; that is, agents represented Twitter users and most of the simulation relied on procedures that were at the agent-level.  Some procedures were not a the agent-level, e.g., how many agents entered the system during simulation time that were not in the prior observational period was based on a population-level model.  
+----a set of simulation periods of approximately 2 weeks (adjacent in time)
+----for each sim period, the observational data was from 12-23-18 to the day prior to the sim period
+----for each sim period, the user-level model consisted of seven functions in serial order, one of which was the user attitude model.  It was this function that was the focus of our analysis.
+----for each sim period, we also had the empirical data for all users; this was used to construct direct comparisons for matches between the intersection between all simulated users and actual users whom were matched by user id.  
+--The analytic scheme consisted of two components:
+----An analysis based on the direct matches between simulated users and actual users.  THis analysis was limited by the number of agents who were matched.  This comparison affords a sense of ecological validity within the simulation context in that it does not rely on understanding the input-output relation of each agent, but captures the real agent and how our simulation represented the agent in its social context.
+----An analysis, outside of the simulation environment, that tested the input-output function directly.  This analysis captured all agents in the simulation period who were in the observation period. Keeping in mind that we have access to the empirical data for all simulation periods, we tested how well the model served as an input-output mapping (an attitude model based on a processed message) for all actions performed by the set of users in the analysis. (keep in mind that the data for training the model was always prior to the empircal data used for this analysis).  

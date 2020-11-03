@@ -28,6 +28,9 @@ SocialSim CP4 microsimulation approach:
     Uses the gt/sim methodology and incorporates Moody-like
     inputs
 
+SocialSim CP4 Recurrent Net Model of Attitudes:
+    Does recurrent net capture states better.
+    
 Original Tweets paper:
     RESEARCH QUESTON:  Can we generate a representational model that
     captures original tweets that reflect attitudes?
